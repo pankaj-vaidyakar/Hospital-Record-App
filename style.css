@@ -90,4 +90,76 @@ div {
     font-family: monospace;
     color: #2b619e;
     text-decoration: underline;
+  } 
+  /* =========================
+   RESPONSIVE ADD-ON CSS
+   ========================= */
+
+/* 📱 Mobile & Tablet */
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
   }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  /* Form responsive */
+  form {
+    width: 100%;
+  }
+
+  form input,
+  form select {
+    width: 100%;
+  }
+
+  /* Table responsive */
+  table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+  }
+
+  tbody td:last-child {
+    border-bottom: none;
+  }
+}
+
+/* 📱 Small Mobile */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  form input[type="submit"] {
+    font-size: 14px;
+  }
+}
+
+
+
+
